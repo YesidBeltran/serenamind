@@ -1,0 +1,10 @@
+{
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/", "destination": "/index.html" },
+    { "source": "/semana", "destination": "/semana.html" },
+    { "source": "/mes", "destination": "/mes.html" },
+    { "source": "/balance", "destination": "/balance.html" },
+    { "source": "/freno", "destination": "/microfreno.html" }
+  ]
+}
