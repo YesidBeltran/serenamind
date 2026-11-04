@@ -6,7 +6,7 @@
       min-height: max(884px, 100dvh);
     }
   </style>
-  </head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl pt-safe shadow-[0_1px_8px_rgba(45,90,76,0.04)]"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="SerenaMind Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZ3xgX0k_TLIAfnZZ95Ql-4MUdtmRcD6DpAS9SVvboYBtkOPoWKM8yutheYxKYpvtxRhLuR9T-V6u7TqY979blP4zjqP2ZbaiGpX4-Ip7ZLG4_0PnCyih2T5C8jVU72icaEOvW90O7s1nQzFH-j21ORLHAFih9MJ6RQAFrEtexsocBpSI6FVO37-HUmOg2Le9U9T6K0vM6n1vaEJ31h_UATuzcwt4mW5h-oUXSmQNW"/><span class="font-headline-sm text-headline-sm text-primary tracking-tight">SerenaMind</span></div><div class="flex items-center gap-space-sm"><span class="font-label-md text-label-md text-on-surface-variant font-medium hidden sm:inline">Ruta Del Mes</span><a class="flex items-center justify-center p-1 rounded-full transition-transform active:scale-95" data-path="perfil-de-usuario" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover shadow-[0_2px_8px_-2px_rgba(45,90,76,0.15)]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDiI64iueDjPcEkag9JVNC2Mi3EFRPwKIBbxuHbvE16BGVAwSMsqFDRvG1SGlSsIc_2IcJC5Pz1582LreQudAROLtSC3UvaQw9dM-A7fCMoyra_BouSU3RY601kzmCrrnx6nVRS1Oyyk5tOTrTmb7vDqnLKLEIfLgip2RgDjtlfj917Dzhl63Crgf36FOTO0yy1-RxagFB4dwVGr3lSMBzOj9dCfFyWH1ghuNo9pDcG"/></a></div></div></header><main class="flex flex-col relative w-full pt-16 pb-28 bg-surface min-h-screen"><div class="flex flex-col w-full px-margin pb-6 gap-space-lg">
+</head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl pt-safe shadow-[0_1px_8px_rgba(45,90,76,0.04)]"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="SerenaMind Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZ3xgX0k_TLIAfnZZ95Ql-4MUdtmRcD6DpAS9SVvboYBtkOPoWKM8yutheYxKYpvtxRhLuR9T-V6u7TqY979blP4zjqP2ZbaiGpX4-Ip7ZLG4_0PnCyih2T5C8jVU72icaEOvW90O7s1nQzFH-j21ORLHAFih9MJ6RQAFrEtexsocBpSI6FVO37-HUmOg2Le9U9T6K0vM6n1vaEJ31h_UATuzcwt4mW5h-oUXSmQNW"/><span class="font-headline-sm text-headline-sm text-primary tracking-tight">SerenaMind</span></div><div class="flex items-center gap-space-sm"><span class="font-label-md text-label-md text-on-surface-variant font-medium hidden sm:inline">Ruta Del Mes</span><a class="flex items-center justify-center p-1 rounded-full transition-transform active:scale-95" href="index.html"><img alt="Profile" class="w-8 h-8 rounded-full object-cover shadow-[0_2px_8px_-2px_rgba(45,90,76,0.15)]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDiI64iueDjPcEkag9JVNC2Mi3EFRPwKIBbxuHbvE16BGVAwSMsqFDRvG1SGlSsIc_2IcJC5Pz1582LreQudAROLtSC3UvaQw9dM-A7fCMoyra_BouSU3RY601kzmCrrnx6nVRS1Oyyk5tOTrTmb7vDqnLKLEIfLgip2RgDjtlfj917Dzhl63Crgf36FOTO0yy1-RxagFB4dwVGr3lSMBzOj9dCfFyWH1ghuNo9pDcG"/></a></div></div></header><main class="flex flex-col relative w-full pt-16 pb-28 bg-surface min-h-screen"><div class="flex flex-col w-full px-margin pb-6 gap-space-lg">
 <div class="relative overflow-hidden rounded-2xl bg-surface-container p-space-lg shadow-sm">
 <div class="flex items-start justify-between gap-space-sm relative z-10">
 <div class="flex flex-col gap-1 max-w-[80%]">
@@ -24,14 +24,14 @@
 <div class="mt-space-md pt-space-sm relative z-10 flex flex-col gap-2">
 <div class="flex items-center justify-between font-label-md text-label-md">
 <span class="text-on-surface font-semibold">Mes 1: Fase de Desactivación de Patrones</span>
-<span class="text-primary font-bold">28% Total</span>
+<span class="text-primary font-bold" id="total-progress-label">25% Total</span>
 </div>
 <div class="w-full h-2.5 bg-surface-variant rounded-full overflow-hidden">
-<div class="h-full bg-primary-container rounded-full transition-all duration-700 ease-out" style="width: 28%;"></div>
+<div class="h-full bg-primary-container rounded-full transition-all duration-500 ease-out" id="total-progress-bar" style="width: 25%;"></div>
 </div>
 <div class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
 <span class="material-symbols-outlined text-[15px] text-primary">timelapse</span>
-<span>Semana 1 en curso • 5 días restantes</span>
+<span id="activities-completed-count">3 de 12 actividades completadas</span>
 </div>
 </div>
 </div>
@@ -52,180 +52,222 @@
 <span class="font-label-sm text-label-sm text-on-surface-variant">4 Fases Progresivas</span>
 </div>
 <!-- Semana 1 -->
-<div class="rounded-2xl bg-surface-container-lowest p-space-md shadow-sm transition-all duration-300">
-<div class="flex items-start justify-between cursor-pointer" onclick="toggleWeek('week-1', this)">
+<div class="rounded-2xl bg-surface-container-lowest p-space-md shadow-sm transition-all duration-300 week-card" id="card-week-1">
+<div class="flex items-start justify-between cursor-pointer select-none" onclick="toggleWeek('week-1')">
 <div class="flex items-center gap-3">
-<div class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center text-primary font-headline-sm">
+<div class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center text-primary font-headline-sm font-semibold transition-colors" id="circle-week-1">
             1
           </div>
 <div class="flex flex-col">
-<div class="flex items-center gap-2">
+<div class="flex items-center gap-2 flex-wrap">
 <span class="font-label-lg text-label-lg text-on-surface font-semibold">Semana 1: Autoobservación</span>
-<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm">En Curso • 70%</span>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm transition-all" id="badge-week-1">En Curso • 67%</span>
 </div>
 <span class="font-body-sm text-body-sm text-on-surface-variant">Detección de Gatillos y Señales Somáticas</span>
 </div>
 </div>
-<button aria-label="Desplegar contenido" class="p-1 rounded-full text-on-surface-variant" type="button">
-<span class="material-symbols-outlined transition-transform duration-200" id="icon-week-1">expand_less</span>
+<button aria-label="Desplegar contenido" class="p-1 rounded-full text-on-surface-variant hover:text-primary transition-colors" type="button">
+<span class="material-symbols-outlined transition-transform duration-300" id="icon-week-1">expand_less</span>
 </button>
 </div>
 <div class="mt-space-md flex flex-col gap-space-sm transition-all" id="week-1">
 <div class="w-full h-1.5 bg-surface-variant rounded-full overflow-hidden">
-<div class="h-full bg-primary rounded-full" style="width: 70%;"></div>
+<div class="h-full bg-primary rounded-full transition-all duration-500" id="bar-week-1" style="width: 67%;"></div>
 </div>
 <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Actividades clave de calibración:</p>
 <div class="flex flex-col gap-2">
-<label class="flex items-start gap-3 p-2.5 rounded-xl bg-surface-container-low cursor-pointer hover:bg-surface-container transition-colors">
-<input checked="" class="mt-1 h-4 w-4 rounded text-primary accent-primary cursor-pointer" type="checkbox"/>
-<div class="flex flex-col">
-<span class="font-label-md text-label-md font-semibold text-on-surface line-through opacity-75">Mapa de detonantes personales</span>
+<div class="flex items-start gap-3 p-2.5 rounded-xl bg-surface-container-low cursor-pointer hover:bg-surface-container transition-all select-none activity-item" onclick="toggleTask('w1-t1')">
+<div class="mt-0.5 w-5 h-5 rounded-md flex items-center justify-center border border-primary bg-primary text-on-primary checkbox-box" id="box-w1-t1">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+<div class="flex flex-col flex-1">
+<span class="font-label-md text-label-md font-semibold text-on-surface line-through opacity-75 task-title" id="title-w1-t1">Mapa de detonantes personales</span>
 <span class="font-body-sm text-body-sm text-on-surface-variant">Identificar escenarios habituales de frustración o roce.</span>
 </div>
-</label>
-<label class="flex items-start gap-3 p-2.5 rounded-xl bg-surface-container-low cursor-pointer hover:bg-surface-container transition-colors">
-<input checked="" class="mt-1 h-4 w-4 rounded text-primary accent-primary cursor-pointer" type="checkbox"/>
-<div class="flex flex-col">
-<span class="font-label-md text-label-md font-semibold text-on-surface line-through opacity-75">Registro de somatizaciones</span>
+</div>
+<div class="flex items-start gap-3 p-2.5 rounded-xl bg-surface-container-low cursor-pointer hover:bg-surface-container transition-all select-none activity-item" onclick="toggleTask('w1-t1')">
+</div>
+<div class="flex items-start gap-3 p-2.5 rounded-xl bg-surface-container-low cursor-pointer hover:bg-surface-container transition-all select-none activity-item" onclick="toggleTask('w1-t2')">
+<div class="mt-0.5 w-5 h-5 rounded-md flex items-center justify-center border border-primary bg-primary text-on-primary checkbox-box" id="box-w1-t2">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+<div class="flex flex-col flex-1">
+<span class="font-label-md text-label-md font-semibold text-on-surface line-through opacity-75 task-title" id="title-w1-t2">Registro de somatizaciones</span>
 <span class="font-body-sm text-body-sm text-on-surface-variant">Reconocer calor corporal, nudo en garganta o tensión de mandíbula.</span>
 </div>
-</label>
-<label class="flex items-start gap-3 p-2.5 rounded-xl bg-surface-container-low cursor-pointer hover:bg-surface-container transition-colors">
-<input class="mt-1 h-4 w-4 rounded text-primary accent-primary cursor-pointer" type="checkbox"/>
-<div class="flex flex-col">
-<span class="font-label-md text-label-md font-semibold text-on-surface">Pausa somática de 60 segundos</span>
+</div>
+<div class="flex items-start gap-3 p-2.5 rounded-xl bg-surface-container-low cursor-pointer hover:bg-surface-container transition-all select-none activity-item" onclick="toggleTask('w1-t3')">
+<div class="mt-0.5 w-5 h-5 rounded-md flex items-center justify-center border border-outline bg-surface-container-lowest text-transparent checkbox-box" id="box-w1-t3">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+<div class="flex flex-col flex-1">
+<span class="font-label-md text-label-md font-semibold text-on-surface task-title" id="title-w1-t3">Pausa somática de 60 segundos</span>
 <span class="font-body-sm text-body-sm text-on-surface-variant">Soltar puños y abrir hombros al sentir incomodidad.</span>
 </div>
-</label>
+</div>
 </div>
 </div>
 </div>
 <!-- Semana 2 -->
-<div class="rounded-2xl bg-surface-container-lowest p-space-md shadow-sm transition-all duration-300">
-<div class="flex items-start justify-between cursor-pointer" onclick="toggleWeek('week-2', this)">
+<div class="rounded-2xl bg-surface-container-lowest p-space-md shadow-sm transition-all duration-300 week-card" id="card-week-2">
+<div class="flex items-start justify-between cursor-pointer select-none" onclick="toggleWeek('week-2')">
 <div class="flex items-center gap-3">
-<div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed font-headline-sm">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed font-headline-sm font-semibold transition-colors" id="circle-week-2">
             2
           </div>
 <div class="flex flex-col">
-<div class="flex items-center gap-2">
+<div class="flex items-center gap-2 flex-wrap">
 <span class="font-label-lg text-label-lg text-on-surface font-semibold">Semana 2: Desescalamiento Inmediato</span>
-<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm">Próxima</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm transition-all" id="badge-week-2">En Curso • 33%</span>
 </div>
 <span class="font-body-sm text-body-sm text-on-surface-variant">Herramientas activas de rescate emocional</span>
 </div>
 </div>
-<button aria-label="Desplegar contenido" class="p-1 rounded-full text-on-surface-variant" type="button">
-<span class="material-symbols-outlined transition-transform duration-200" id="icon-week-2">expand_more</span>
+<button aria-label="Desplegar contenido" class="p-1 rounded-full text-on-surface-variant hover:text-primary transition-colors" type="button">
+<span class="material-symbols-outlined transition-transform duration-300" id="icon-week-2">expand_more</span>
 </button>
 </div>
-<div class="mt-space-md hidden flex flex-col gap-space-sm" id="week-2">
-<p class="font-body-sm text-body-sm text-on-surface-variant">Actividades clave de desescalada:</p>
+<div class="mt-space-md hidden flex flex-col gap-space-sm transition-all" id="week-2">
+<div class="w-full h-1.5 bg-surface-variant rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full transition-all duration-500" id="bar-week-2" style="width: 33%;"></div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Actividades clave de desescalada:</p>
 <div class="flex flex-col gap-2">
-<div class="flex items-start gap-3 p-2.5 rounded-xl bg-surface-container-low">
-<span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">air</span>
-<div class="flex flex-col">
-<span class="font-label-md text-label-md font-semibold text-on-surface">Respiración diafragmática 4-7-8</span>
-<span class="font-body-sm text-body-sm text-on-surface-variant">Reducir taquicardia y sobrecarga del sistema simpático.</span>
+<div class="flex items-start gap-3 p-2.5 rounded-xl bg-surface-container-low cursor-pointer hover:bg-surface-container transition-all select-none activity-item" onclick="toggleTask('w2-t1')">
+<div class="mt-0.5 w-5 h-5 rounded-md flex items-center justify-center border border-primary bg-primary text-on-primary checkbox-box" id="box-w2-t1">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+<div class="flex flex-col flex-1">
+<span class="font-label-md text-label-md font-semibold text-on-surface line-through opacity-75 task-title" id="title-w2-t1">Técnica del vaso de agua y respiración 4-7-8</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Reducir taquicardia e hiperventilación con pausa de absorción sensorial.</span>
 </div>
 </div>
-<div class="flex items-start gap-3 p-2.5 rounded-xl bg-surface-container-low">
-<span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">pause_circle</span>
-<div class="flex flex-col">
-<span class="font-label-md text-label-md font-semibold text-on-surface">Técnica de 'Time-Out' asertivo</span>
-<span class="font-body-sm text-body-sm text-on-surface-variant">Retirarse respetuosamente de una discusión antes del desborde.</span>
+<div class="flex items-start gap-3 p-2.5 rounded-xl bg-surface-container-low cursor-pointer hover:bg-surface-container transition-all select-none activity-item" onclick="toggleTask('w2-t2')">
+<div class="mt-0.5 w-5 h-5 rounded-md flex items-center justify-center border border-outline bg-surface-container-lowest text-transparent checkbox-box" id="box-w2-t2">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+<div class="flex flex-col flex-1">
+<span class="font-label-md text-label-md font-semibold text-on-surface task-title" id="title-w2-t2">Identificación de pensamientos trampa</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Neutralizar conclusiones extremas como "siempre me ignora".</span>
 </div>
 </div>
-<div class="flex items-start gap-3 p-2.5 rounded-xl bg-surface-container-low">
-<span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">neurology</span>
-<div class="flex flex-col">
-<span class="font-label-md text-label-md font-semibold text-on-surface">Reencuadre cognitivo rápido</span>
-<span class="font-body-sm text-body-sm text-on-surface-variant">Transformar el "lo hace para molestarme" en neutralidad objetiva.</span>
+<div class="flex items-start gap-3 p-2.5 rounded-xl bg-surface-container-low cursor-pointer hover:bg-surface-container transition-all select-none activity-item" onclick="toggleTask('w2-t3')">
+<div class="mt-0.5 w-5 h-5 rounded-md flex items-center justify-center border border-outline bg-surface-container-lowest text-transparent checkbox-box" id="box-w2-t3">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+<div class="flex flex-col flex-1">
+<span class="font-label-md text-label-md font-semibold text-on-surface task-title" id="title-w2-t3">Ensayo de micro-freno ante irritación</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Contar regresivamente de 5 a 1 con inhalación profunda antes de contestar.</span>
 </div>
 </div>
 </div>
 </div>
 </div>
 <!-- Semana 3 -->
-<div class="rounded-2xl bg-surface-container-lowest p-space-md shadow-sm transition-all duration-300 opacity-90">
-<div class="flex items-start justify-between cursor-pointer" onclick="toggleWeek('week-3', this)">
+<div class="rounded-2xl bg-surface-container-lowest p-space-md shadow-sm transition-all duration-300 week-card" id="card-week-3">
+<div class="flex items-start justify-between cursor-pointer select-none" onclick="toggleWeek('week-3')">
 <div class="flex items-center gap-3">
-<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-outline font-headline-sm">
-<span class="material-symbols-outlined text-[20px]">lock</span>
-</div>
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-outline font-headline-sm font-semibold transition-colors" id="circle-week-3">
+            3
+          </div>
 <div class="flex flex-col">
-<div class="flex items-center gap-2">
+<div class="flex items-center gap-2 flex-wrap">
 <span class="font-label-lg text-label-lg text-on-surface font-semibold">Semana 3: Comunicación Asertiva</span>
-<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Semana 3</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm transition-all" id="badge-week-3">Pendiente • 0%</span>
 </div>
 <span class="font-body-sm text-body-sm text-on-surface-variant">Negociación de Conflictos sin Violencia</span>
 </div>
 </div>
-<button aria-label="Desplegar contenido" class="p-1 rounded-full text-on-surface-variant" type="button">
-<span class="material-symbols-outlined transition-transform duration-200" id="icon-week-3">expand_more</span>
+<button aria-label="Desplegar contenido" class="p-1 rounded-full text-on-surface-variant hover:text-primary transition-colors" type="button">
+<span class="material-symbols-outlined transition-transform duration-300" id="icon-week-3">expand_more</span>
 </button>
 </div>
-<div class="mt-space-md hidden flex flex-col gap-space-sm" id="week-3">
-<p class="font-body-sm text-body-sm text-on-surface-variant">Actividades clave de expresión:</p>
+<div class="mt-space-md hidden flex flex-col gap-space-sm transition-all" id="week-3">
+<div class="w-full h-1.5 bg-surface-variant rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full transition-all duration-500" id="bar-week-3" style="width: 0%;"></div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Actividades clave de expresión:</p>
 <div class="flex flex-col gap-2">
-<div class="flex items-start gap-3 p-2.5 rounded-xl bg-surface-container-low">
-<span class="material-symbols-outlined text-outline text-[20px] mt-0.5">record_voice_over</span>
-<div class="flex flex-col">
-<span class="font-label-md text-label-md font-semibold text-on-surface">Decir 'no' sin agresividad</span>
-<span class="font-body-sm text-body-sm text-on-surface-variant">Establecer límites sanos con calidez y firmeza.</span>
+<div class="flex items-start gap-3 p-2.5 rounded-xl bg-surface-container-low cursor-pointer hover:bg-surface-container transition-all select-none activity-item" onclick="toggleTask('w3-t1')">
+<div class="mt-0.5 w-5 h-5 rounded-md flex items-center justify-center border border-outline bg-surface-container-lowest text-transparent checkbox-box" id="box-w3-t1">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+<div class="flex flex-col flex-1">
+<span class="font-label-md text-label-md font-semibold text-on-surface task-title" id="title-w3-t1">Práctica del mensaje 'Yo siento' en vez de culpar</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Responsabilizarse de las emociones propias sin atacar con "tú eres".</span>
 </div>
 </div>
-<div class="flex items-start gap-3 p-2.5 rounded-xl bg-surface-container-low">
-<span class="material-symbols-outlined text-outline text-[20px] mt-0.5">forum</span>
-<div class="flex flex-col">
-<span class="font-label-md text-label-md font-semibold text-on-surface">Uso del 'Yo siento' vs 'Tú siempre'</span>
-<span class="font-body-sm text-body-sm text-on-surface-variant">Responsabilizarse de las emociones sin culpabilizar.</span>
+<div class="flex items-start gap-3 p-2.5 rounded-xl bg-surface-container-low cursor-pointer hover:bg-surface-container transition-all select-none activity-item" onclick="toggleTask('w3-t2')">
+<div class="mt-0.5 w-5 h-5 rounded-md flex items-center justify-center border border-outline bg-surface-container-lowest text-transparent checkbox-box" id="box-w3-t2">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+<div class="flex flex-col flex-1">
+<span class="font-label-md text-label-md font-semibold text-on-surface task-title" id="title-w3-t2">Pausa de 3 minutos antes de contestar discusiones</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Pedir un breve espacio de hidratación y desescalada mutua.</span>
 </div>
 </div>
-<div class="flex items-start gap-3 p-2.5 rounded-xl bg-surface-container-low">
-<span class="material-symbols-outlined text-outline text-[20px] mt-0.5">hearing</span>
-<div class="flex flex-col">
-<span class="font-label-md text-label-md font-semibold text-on-surface">Escucha empática activa</span>
-<span class="font-body-sm text-body-sm text-on-surface-variant">Validar la perspectiva ajena antes de emitir réplicas.</span>
+<div class="flex items-start gap-3 p-2.5 rounded-xl bg-surface-container-low cursor-pointer hover:bg-surface-container transition-all select-none activity-item" onclick="toggleTask('w3-t3')">
+<div class="mt-0.5 w-5 h-5 rounded-md flex items-center justify-center border border-outline bg-surface-container-lowest text-transparent checkbox-box" id="box-w3-t3">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+<div class="flex flex-col flex-1">
+<span class="font-label-md text-label-md font-semibold text-on-surface task-title" id="title-w3-t3">Escucha activa sin interrumpir</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Escuchar los argumentos ajenos sin preparar la réplica de defensa.</span>
 </div>
 </div>
 </div>
 </div>
 </div>
 <!-- Semana 4 -->
-<div class="rounded-2xl bg-surface-container-lowest p-space-md shadow-sm transition-all duration-300 opacity-80">
-<div class="flex items-start justify-between cursor-pointer" onclick="toggleWeek('week-4', this)">
+<div class="rounded-2xl bg-surface-container-lowest p-space-md shadow-sm transition-all duration-300 week-card" id="card-week-4">
+<div class="flex items-start justify-between cursor-pointer select-none" onclick="toggleWeek('week-4')">
 <div class="flex items-center gap-3">
-<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-outline font-headline-sm">
-<span class="material-symbols-outlined text-[20px]">lock</span>
-</div>
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-outline font-headline-sm font-semibold transition-colors" id="circle-week-4">
+            4
+          </div>
 <div class="flex flex-col">
-<div class="flex items-center gap-2">
+<div class="flex items-center gap-2 flex-wrap">
 <span class="font-label-lg text-label-lg text-on-surface font-semibold">Semana 4: Prevención de Recaídas</span>
-<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Semana 4</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm transition-all" id="badge-week-4">Pendiente • 0%</span>
 </div>
 <span class="font-body-sm text-body-sm text-on-surface-variant">Consolidación de Hábitos y Cierre de Ciclo</span>
 </div>
 </div>
-<button aria-label="Desplegar contenido" class="p-1 rounded-full text-on-surface-variant" type="button">
-<span class="material-symbols-outlined transition-transform duration-200" id="icon-week-4">expand_more</span>
+<button aria-label="Desplegar contenido" class="p-1 rounded-full text-on-surface-variant hover:text-primary transition-colors" type="button">
+<span class="material-symbols-outlined transition-transform duration-300" id="icon-week-4">expand_more</span>
 </button>
 </div>
-<div class="mt-space-md hidden flex flex-col gap-space-sm" id="week-4">
-<p class="font-body-sm text-body-sm text-on-surface-variant">Actividades clave de fijación:</p>
+<div class="mt-space-md hidden flex flex-col gap-space-sm transition-all" id="week-4">
+<div class="w-full h-1.5 bg-surface-variant rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full transition-all duration-500" id="bar-week-4" style="width: 0%;"></div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Actividades clave de fijación:</p>
 <div class="flex flex-col gap-2">
-<div class="flex items-start gap-3 p-2.5 rounded-xl bg-surface-container-low">
-<span class="material-symbols-outlined text-outline text-[20px] mt-0.5">medical_services</span>
-<div class="flex flex-col">
-<span class="font-label-md text-label-md font-semibold text-on-surface">Botiquín de Emergencia Mental</span>
-<span class="font-body-sm text-body-sm text-on-surface-variant">Guía de 3 pasos de acceso veloz en crisis.</span>
+<div class="flex items-start gap-3 p-2.5 rounded-xl bg-surface-container-low cursor-pointer hover:bg-surface-container transition-all select-none activity-item" onclick="toggleTask('w4-t1')">
+<div class="mt-0.5 w-5 h-5 rounded-md flex items-center justify-center border border-outline bg-surface-container-lowest text-transparent checkbox-box" id="box-w4-t1">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+<div class="flex flex-col flex-1">
+<span class="font-label-md text-label-md font-semibold text-on-surface task-title" id="title-w4-t1">Identificación de señales tempranas de fatiga</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Detectar momentos vulnerables de agotamiento o hambre antes de interactuar.</span>
 </div>
 </div>
-<div class="flex items-start gap-3 p-2.5 rounded-xl bg-surface-container-low">
-<span class="material-symbols-outlined text-outline text-[20px] mt-0.5">trending_up</span>
-<div class="flex flex-col">
-<span class="font-label-md text-label-md font-semibold text-on-surface">Evaluación comparativa final</span>
-<span class="font-body-sm text-body-sm text-on-surface-variant">Contrastar métricas con el test de inicio de mes.</span>
+<div class="flex items-start gap-3 p-2.5 rounded-xl bg-surface-container-low cursor-pointer hover:bg-surface-container transition-all select-none activity-item" onclick="toggleTask('w4-t2')">
+<div class="mt-0.5 w-5 h-5 rounded-md flex items-center justify-center border border-outline bg-surface-container-lowest text-transparent checkbox-box" id="box-w4-t2">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+<div class="flex flex-col flex-1">
+<span class="font-label-md text-label-md font-semibold text-on-surface task-title" id="title-w4-t2">Plan de contingencia ante crisis</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Guía de 3 pasos de acceso veloz al sentir saturación emocional aguda.</span>
+</div>
+</div>
+<div class="flex items-start gap-3 p-2.5 rounded-xl bg-surface-container-low cursor-pointer hover:bg-surface-container transition-all select-none activity-item" onclick="toggleTask('w4-t3')">
+<div class="mt-0.5 w-5 h-5 rounded-md flex items-center justify-center border border-outline bg-surface-container-lowest text-transparent checkbox-box" id="box-w4-t3">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+<div class="flex flex-col flex-1">
+<span class="font-label-md text-label-md font-semibold text-on-surface task-title" id="title-w4-t3">Reevaluación final del test de reactividad</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Medir mejoras objetivas contra la línea base del inicio de mes.</span>
 </div>
 </div>
 </div>
@@ -256,29 +298,191 @@
 </div>
 </div>
 <div class="flex flex-col gap-space-sm pt-space-xs">
-<button class="w-full flex items-center justify-center gap-2 py-3.5 px-space-md rounded-xl bg-primary text-on-primary font-label-lg text-label-lg shadow-sm active:scale-[0.99] transition-all hover:bg-primary/90" type="button">
-<span class="material-symbols-outlined text-[20px]">download</span>
-<span>Descargar Guía en PDF</span>
+<button class="w-full flex items-center justify-center gap-2 py-3.5 px-space-md rounded-xl bg-primary text-on-primary font-label-lg text-label-lg shadow-sm active:scale-[0.98] transition-all hover:bg-primary/90" id="btn-download" onclick="downloadPdfGuide()" type="button">
+<span class="material-symbols-outlined text-[20px]" id="download-icon">download</span>
+<span id="download-text">Descargar Guía en PDF</span>
 </button>
-<button class="w-full flex items-center justify-center gap-2 py-3 px-space-md rounded-xl bg-surface-container text-primary font-label-lg text-label-lg transition-colors hover:bg-surface-variant" type="button">
+<a class="w-full flex items-center justify-center gap-2 py-3 px-space-md rounded-xl bg-surface-container text-primary font-label-lg text-label-lg transition-colors hover:bg-surface-variant active:scale-[0.98]" href="index.html">
 <span class="material-symbols-outlined text-[20px]">assignment_turned_in</span>
 <span>Reevaluar Test al Final de Mes</span>
-</button>
+</a>
+</div>
+<!-- Toast Feedback Container -->
+<div class="fixed bottom-24 left-1/2 -translate-x-1/2 z-50 bg-inverse-surface text-inverse-on-surface px-4 py-2.5 rounded-full shadow-lg text-body-sm font-label-md flex items-center gap-2 opacity-0 pointer-events-none transition-opacity duration-300 max-w-[90%] text-center" id="toast">
+<span class="material-symbols-outlined text-primary-fixed text-[20px]">check_circle</span>
+<span id="toast-message">Guía en PDF descargada con éxito</span>
 </div>
 </div>
 <script>
-  function toggleWeek(weekId, triggerElement) {
-    const target = document.getElementById(weekId);
-    const icon = document.getElementById('icon-' + weekId);
-    if (!target) return;
+  // Estado de las tareas (3 por semana = 12 en total)
+  const taskState = {
+    'w1-t1': true,
+    'w1-t2': true,
+    'w1-t3': false,
+    'w2-t1': true,
+    'w2-t2': false,
+    'w2-t3': false,
+    'w3-t1': false,
+    'w3-t2': false,
+    'w3-t3': false,
+    'w4-t1': false,
+    'w4-t2': false,
+    'w4-t3': false
+  };
 
-    const isHidden = target.classList.contains('hidden');
-    if (isHidden) {
-      target.classList.remove('hidden');
-      if (icon) icon.textContent = 'expand_less';
+  const weekTasks = {
+    'week-1': ['w1-t1', 'w1-t2', 'w1-t3'],
+    'week-2': ['w2-t1', 'w2-t2', 'w2-t3'],
+    'week-3': ['w3-t1', 'w3-t2', 'w3-t3'],
+    'week-4': ['w4-t1', 'w4-t2', 'w4-t3']
+  };
+
+  // Función de acordeón interactivo (expande la seleccionada y colapsa las otras)
+  function toggleWeek(selectedWeekId) {
+    const allWeeks = ['week-1', 'week-2', 'week-3', 'week-4'];
+    
+    allWeeks.forEach(weekId => {
+      const target = document.getElementById(weekId);
+      const icon = document.getElementById('icon-' + weekId);
+      if (!target) return;
+
+      if (weekId === selectedWeekId) {
+        const isHidden = target.classList.contains('hidden');
+        if (isHidden) {
+          target.classList.remove('hidden');
+          if (icon) icon.textContent = 'expand_less';
+        } else {
+          target.classList.add('hidden');
+          if (icon) icon.textContent = 'expand_more';
+        }
+      } else {
+        // Colapsar otras semanas para un flujo de acordeón armónico
+        target.classList.add('hidden');
+        if (icon) icon.textContent = 'expand_more';
+      }
+    });
+  }
+
+  // Marcar/Desmarcar actividades interactivamente
+  function toggleTask(taskId) {
+    taskState[taskId] = !taskState[taskId];
+    updateTaskUI(taskId);
+    recalculateProgress();
+  }
+
+  function updateTaskUI(taskId) {
+    const isDone = taskState[taskId];
+    const box = document.getElementById('box-' + taskId);
+    const title = document.getElementById('title-' + taskId);
+    if (!box || !title) return;
+
+    if (isDone) {
+      box.className = "mt-0.5 w-5 h-5 rounded-md flex items-center justify-center border border-primary bg-primary text-on-primary checkbox-box";
+      title.classList.add('line-through', 'opacity-75');
     } else {
-      target.classList.add('hidden');
-      if (icon) icon.textContent = 'expand_more';
+      box.className = "mt-0.5 w-5 h-5 rounded-md flex items-center justify-center border border-outline bg-surface-container-lowest text-transparent checkbox-box";
+      title.classList.remove('line-through', 'opacity-75');
     }
   }
-</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(45,90,76,0.05)]" data-active-classes="[&amp;&gt;div]:bg-primary-container [&amp;&gt;div]:text-on-primary [&amp;&gt;div]:shadow-[0_2px_8px_rgba(45,90,76,0.15)] text-primary font-semibold"><div class="flex justify-around items-center h-20 px-space-xs"><a class="group flex flex-col items-center justify-center min-w-[70px] min-h-[48px] py-1 text-on-surface-variant transition-colors duration-200" data-path="test" href="#"><div class="flex items-center justify-center w-12 h-8 rounded-full transition-all duration-200"><span class="material-symbols-outlined text-[22px]">psychology_alt</span></div><span class="font-label-sm text-label-sm tracking-tight mt-0.5">Test</span></a><a class="group flex flex-col items-center justify-center min-w-[70px] min-h-[48px] py-1 text-on-surface-variant transition-colors duration-200" data-path="balance" href="#"><div class="flex items-center justify-center w-12 h-8 rounded-full transition-all duration-200"><span class="material-symbols-outlined text-[22px]">spa</span></div><span class="font-label-sm text-label-sm tracking-tight mt-0.5">Balance</span></a><a class="group flex flex-col items-center justify-center min-w-[70px] min-h-[48px] py-1 text-on-surface-variant transition-colors duration-200" data-path="esta-semana" href="#"><div class="flex items-center justify-center w-12 h-8 rounded-full transition-all duration-200"><span class="material-symbols-outlined text-[22px]">calendar_today</span></div><span class="font-label-sm text-label-sm tracking-tight mt-0.5">Esta Semana</span></a><a aria-current="page" class="group flex flex-col items-center justify-center min-w-[70px] min-h-[48px] py-1 transition-colors duration-200 [&amp;&gt;div]:bg-primary-container [&amp;&gt;div]:text-on-primary [&amp;&gt;div]:shadow-[0_2px_8px_rgba(45,90,76,0.15)] text-primary font-semibold" data-path="ruta-del-mes" href="#"><div class="flex items-center justify-center w-12 h-8 rounded-full transition-all duration-200"><span class="material-symbols-outlined text-[22px]">explore</span></div><span class="font-label-sm text-label-sm tracking-tight mt-0.5">Ruta del Mes</span></a></div></nav></body></html>
+
+  // Recálculo dinámico de progreso total y por semana
+  function recalculateProgress() {
+    let totalCompleted = 0;
+    const totalCount = Object.keys(taskState).length;
+
+    Object.keys(taskState).forEach(id => {
+      if (taskState[id]) totalCompleted++;
+    });
+
+    const overallPct = Math.round((totalCompleted / totalCount) * 100);
+
+    // Actualizar barra y etiqueta general
+    const totalLabel = document.getElementById('total-progress-label');
+    const totalBar = document.getElementById('total-progress-bar');
+    const countLabel = document.getElementById('activities-completed-count');
+
+    if (totalLabel) totalLabel.textContent = overallPct + '% Total';
+    if (totalBar) totalBar.style.width = overallPct + '%';
+    if (countLabel) countLabel.textContent = `${totalCompleted} de ${totalCount} actividades completadas`;
+
+    // Actualizar cada semana
+    Object.keys(weekTasks).forEach(weekKey => {
+      const tasks = weekTasks[weekKey];
+      const completedInWeek = tasks.filter(t => taskState[t]).length;
+      const weekPct = Math.round((completedInWeek / tasks.length) * 100);
+
+      const weekBar = document.getElementById('bar-' + weekKey);
+      const weekBadge = document.getElementById('badge-' + weekKey);
+      const weekCircle = document.getElementById('circle-' + weekKey);
+
+      if (weekBar) weekBar.style.width = weekPct + '%';
+
+      if (weekBadge) {
+        if (completedInWeek === 3) {
+          weekBadge.className = 'px-2 py-0.5 rounded-full bg-primary text-on-primary font-label-sm text-label-sm font-semibold transition-all';
+          weekBadge.textContent = 'Completada ✓';
+          if (weekCircle) {
+            weekCircle.className = 'w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center font-headline-sm font-semibold transition-colors';
+          }
+        } else if (completedInWeek > 0) {
+          weekBadge.className = 'px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm transition-all';
+          weekBadge.textContent = `En Curso • ${weekPct}%`;
+          if (weekCircle) {
+            weekCircle.className = 'w-10 h-10 rounded-full bg-primary-fixed text-primary flex items-center justify-center font-headline-sm font-semibold transition-colors';
+          }
+        } else {
+          weekBadge.className = 'px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm transition-all';
+          weekBadge.textContent = 'Pendiente • 0%';
+          if (weekCircle) {
+            weekCircle.className = 'w-10 h-10 rounded-full bg-surface-container-high text-outline flex items-center justify-center font-headline-sm font-semibold transition-colors';
+          }
+        }
+      }
+    });
+  }
+
+  // Toast feedback y acción de descarga de PDF
+  function downloadPdfGuide() {
+    const btn = document.getElementById('btn-download');
+    const icon = document.getElementById('download-icon');
+    const text = document.getElementById('download-text');
+    const toast = document.getElementById('toast');
+    const toastMessage = document.getElementById('toast-message');
+
+    if (!btn || !toast) return;
+
+    // Estado cargando
+    icon.textContent = 'hourglass_empty';
+    text.textContent = 'Generando Guía...';
+    btn.classList.add('opacity-80', 'pointer-events-none');
+
+    setTimeout(() => {
+      icon.textContent = 'file_download_done';
+      text.textContent = 'Descargada con Éxito';
+      btn.classList.remove('opacity-80', 'pointer-events-none');
+
+      // Mostrar toast
+      toastMessage.textContent = 'Guía de 30 Días de Calma generada en PDF';
+      toast.classList.remove('opacity-0', 'pointer-events-none');
+      toast.classList.add('opacity-100');
+
+      setTimeout(() => {
+        toast.classList.remove('opacity-100');
+        toast.classList.add('opacity-0', 'pointer-events-none');
+        // Restablecer botón
+        setTimeout(() => {
+          icon.textContent = 'download';
+          text.textContent = 'Descargar Guía en PDF';
+        }, 1200);
+      }, 3000);
+    }, 900);
+  }
+
+  // Inicializar al cargar
+  window.addEventListener('DOMContentLoaded', () => {
+    Object.keys(taskState).forEach(taskId => {
+      updateTaskUI(taskId);
+    });
+    recalculateProgress();
+  });
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(45,90,76,0.05)]" data-active-classes="[&amp;&gt;div]:bg-primary-container [&amp;&gt;div]:text-on-primary [&amp;&gt;div]:shadow-[0_2px_8px_rgba(45,90,76,0.15)] text-primary font-semibold"><div class="flex justify-around items-center h-20 px-space-xs"><a class="group flex flex-col items-center justify-center min-w-[70px] min-h-[48px] py-1 text-on-surface-variant transition-colors duration-200" href="index.html"><div class="flex items-center justify-center w-12 h-8 rounded-full transition-all duration-200"><span class="material-symbols-outlined text-[22px]">psychology_alt</span></div><span class="font-label-sm text-label-sm tracking-tight mt-0.5">Test</span></a><a class="group flex flex-col items-center justify-center min-w-[70px] min-h-[48px] py-1 text-on-surface-variant transition-colors duration-200" href="balance.html"><div class="flex items-center justify-center w-12 h-8 rounded-full transition-all duration-200"><span class="material-symbols-outlined text-[22px]">spa</span></div><span class="font-label-sm text-label-sm tracking-tight mt-0.5">Balance</span></a><a class="group flex flex-col items-center justify-center min-w-[70px] min-h-[48px] py-1 text-on-surface-variant transition-colors duration-200" href="semana.html"><div class="flex items-center justify-center w-12 h-8 rounded-full transition-all duration-200"><span class="material-symbols-outlined text-[22px]">calendar_today</span></div><span class="font-label-sm text-label-sm tracking-tight mt-0.5">Esta Semana</span></a><a aria-current="page" class="group flex flex-col items-center justify-center min-w-[70px] min-h-[48px] py-1 transition-colors duration-200 [&amp;&gt;div]:bg-primary-container [&amp;&gt;div]:text-on-primary [&amp;&gt;div]:shadow-[0_2px_8px_rgba(45,90,76,0.15)] text-primary font-semibold" href="mes.html"><div class="flex items-center justify-center w-12 h-8 rounded-full transition-all duration-200"><span class="material-symbols-outlined text-[22px]">explore</span></div><span class="font-label-sm text-label-sm tracking-tight mt-0.5">Ruta del Mes</span></a></div></nav></body></html>
